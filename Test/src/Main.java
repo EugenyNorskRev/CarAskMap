@@ -1,15 +1,15 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Deque deque = new ArrayDeque();
-        deque.offer(12);
-        deque.add(6);
-        deque.add(4);
 
-        deque.poll();
-        deque.peek();
-        System.out.println(deque.element());
+        Set<String> set = new HashSet<>();
+
+        set.add("Hello");
+        set.add("Hello again");
+        set.add("Hello");
+
+        System.out.println(set);
     }
 }
